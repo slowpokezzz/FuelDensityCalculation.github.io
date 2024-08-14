@@ -1,4 +1,4 @@
-# Fuel Density Calculation.github.io
+# Fuel Density Calculation @ github.io
 Repository for Fuel Density Calculation app (iOS).
 
 Welcome. Thanks for stopping by. 
