@@ -10,96 +10,142 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: #f5f5f5;
+            color: #222;
         }
         header {
-            background-color: #333;
+            background-color: #222;
             color: #fff;
-            padding: 10px 0;
+            padding: 24px 0 12px 0;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         }
         nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
             background-color: #333;
             color: #fff;
+            padding: 8px 0;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #00bfff;
+            margin: 0 14px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        main {
+            padding: 32px 5vw 48px 5vw;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            padding: 28px 18px 18px 18px;
+            margin-bottom: 32px;
+        }
+        section h2 {
+            margin-top: 0;
+            color: #0c4a6e;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0 8px 0;
+            font-size: 1em;
+            margin-top: 30px;
+        }
+        @media (max-width: 700px) {
+            main {
+                padding: 20px 2vw 60px 2vw;
+            }
+            nav a {
+                margin: 0 6px;
+                font-size: 0.98em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome and thank you for stopping by.</h1>
+        <h1>Fuel Density Calculation App</h1>
+        <p>Thank you for stopping by!</p>
     </header>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#privacyPolicy">Privcy Policy</a>
+        <a href="#privacyPolicy">Privacy Policy</a>
         <a href="#dataCollection">Data Collection</a>
-        <a href="#ThirdParty">Third-Party</a>
+        <a href="#thirdParty">Third-Party</a>
         <a href="#dataUsage">Data Usage</a>
-        <a href="#changesToPolicy">Changes to Policy</a>
-        <a href="#contactUs">Contact Us</a>
+        <a href="#changesToPolicy">Policy Changes</a>
+        <a href="#contactUs">Contact</a>
     </nav>
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>Fuel Density Calculation app hosted on the Apple App Store.</p>
+            <p><b>Fuel Density Calculation</b> is an iOS app available on the Apple App Store.</p>
         </section>
         
         <section id="about">
             <h2>About</h2>
-            <p>Who dislikes math? This app is specifically designed for wide-body aircrews (Boeing & Airbus) to compare fuel calculations (incorporating density), between what was uploaded (i.e., received) and the actual fuel on board (i.e., FOB).</p>
+            <p>
+                Hate mental math? This app is designed for wide-body aircrews (Boeing & Airbus) to compare fuel calculations—incorporating density—between uploaded (uplifted) and actual fuel on board (FOB).
+            </p>
         </section>
 
         <section id="privacyPolicy">
             <h2>Privacy Policy</h2>
-            <p>Our app is committed to protecting your privacy and ensuring the security of any personal information we collect. This privacy policy outlines our practices regarding data collection and usage.
-            </section>
+            <p>
+                We respect your privacy and are committed to protecting your personal information. This policy outlines our approach to data collection and usage.
+            </p>
+        </section>
     
         <section id="dataCollection">
             <h2>Data Collection</h2>
-            <p>Our app does not collect, store, or transmit any personal user data. We do not access your contacts, location, or any other information on your device.</p>
-            </section>
-
-         </section>
-        <section id="ThirdParty">
-            <h2>Third-Party Services</h2>
-            <p>Our app does not integrate any third-party services or SDKs that would collect user data.</p>
-            </section>
-
+            <p>
+                The Fuel Density Calculation app does not collect, store, or transmit any personal user data. We do not access your contacts, location, or any other information on your device.
+            </p>
         </section>
+
+        <section id="thirdParty">
+            <h2>Third-Party Services</h2>
+            <p>
+                Our app does not integrate any third-party services or SDKs that collect user data.
+            </p>
+        </section>
+
         <section id="dataUsage">
             <h2>Data Usage</h2>
-            <p>As we do not collect user data, there is no data usage, sharing, or selling of information.</p>
-            </section>
-        
+            <p>
+                As we do not collect user data, there is no data sharing or selling of information.
+            </p>
         </section>
-            <section id="changesToPolicy">
-            <h2>Changes to Policy</h2>
-            <p>We may update this privacy policy from time to time. Any changes will be reflected in an updated app version, and users will be notified accordingly.</p>
-            </section>
+        
+        <section id="changesToPolicy">
+            <h2>Policy Changes</h2>
+            <p>
+                We may update this privacy policy from time to time. Any changes will be reflected in a new version of the app and posted here.
+            </p>
+        </section>
         
         <section id="contactUs">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or comments, please email me at richard.montoya00@gmail.com. In using our app, you agree to the terms outlined in this privacy policy. Last updated: 2024-09-03</p>
-            </section>
-        
+            <h2>Contact</h2>
+            <p>
+                If you have any questions or comments, email <a href="mailto:richard.montoya00@gmail.com">richard.montoya00@gmail.com</a>.<br>
+                By using our app, you agree to this privacy policy.<br>
+                <small>Last updated: 2024-09-03</small>
+            </p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Richard Montoya. All rights reserved.</p>
